@@ -34,6 +34,7 @@ function App() {
   )
   
   const copyPassword = useCallback(()=>{
+    passWordRef.current?.select()
     window.navigator.clipboard.writeText(Password)
 
 
